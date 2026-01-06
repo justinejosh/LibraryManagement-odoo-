@@ -4,6 +4,10 @@
         <menuitem id="library_menu_properties" name="Books">
             <menuitem id="library_menu_action"
                 action="library_book_views_action" />
+            <menuitem id="genre_menu_action" 
+                action="book_genre_action" />
+            <menuitem id="author_menu_action"
+                action="book_author_action" />
         </menuitem>
     </menuitem>
 </odoo>

@@ -12,8 +12,8 @@
         <field name="arch" type="xml">
             <list string="Book Channel">
                 <field name="bookName" />
-                <field name="author" />
-                <field name="genre" />
+                <field name="author_id" />
+                <field name="genre" widget="many2many_tags"/>
                 <field name="status" />
             </list>
         </field>
@@ -28,18 +28,19 @@
                     <group>
                         <h2>
                             <field name="bookName" />
+                            <field name="genre" widget="many2many_tags"/>
                         </h2>
-                        <field name="description" />
-                        <field name="author" />
+                        <field name="author_id" />
                         <field name="date_published" />
                         <field name="status" />
                     </group>
                     <notebook>
                         <page string="About">
                             <group>
+                                <field name="description" />
                                 <field name="isbn" />
                                 <field name="pages" />
-                                <field name="genre" />
+                                <field name="language" />
                             </group>
                         </page>
                     </notebook>
